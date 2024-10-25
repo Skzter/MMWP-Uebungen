@@ -1,36 +1,39 @@
 body
 {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin: 0 1vw 0 1vw;
+    padding: 0;
 }
-
 header
 {
     color: green;
-    border: solid green 5px;
+    text-align: center;
 }
 
 nav
 {
-    border: solid black 5px;
+    background-color: green;
     width: 10vw;
     float: left;
 }
 
 article 
 {
-    border: solid red 5px;
+    background-color: yellow;
     width: 50vw;
     float: left;
-    margin-left: 10vw;
+    margin-left: 9vw;
 }
 
 aside
 {
-    border: solid purple 5px;
+    background-color: red;
     width: 20vw;
     float: left;
-    margin-left: 7vw;
+    margin-left: 9vw;
 }
 
-
+footer
+{
+    background-color: orange;
+    clear: left;
+}
