@@ -1,4 +1,36 @@
+body
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 header
 {
     color: green;
+    border: solid green 5px;
 }
+
+nav
+{
+    border: solid black 5px;
+    width: 10vw;
+    float: left;
+}
+
+article 
+{
+    border: solid red 5px;
+    width: 50vw;
+    float: left;
+    margin-left: 10vw;
+}
+
+aside
+{
+    border: solid purple 5px;
+    width: 20vw;
+    float: left;
+    margin-left: 7vw;
+}
+
+
