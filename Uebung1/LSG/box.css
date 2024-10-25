@@ -7,12 +7,21 @@ header
 {
     color: green;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    margin: 0;
+    padding: 0;
 }
 
 nav
 {
     background-color: green;
     width: 10vw;
+    height: 10vh;
     float: left;
 }
 
@@ -20,6 +29,8 @@ article
 {
     background-color: yellow;
     width: 50vw;
+    height: 10vh;
+    float: left;
     float: left;
     margin-left: 9vw;
 }
@@ -28,12 +39,21 @@ aside
 {
     background-color: red;
     width: 20vw;
+    height: 10vh;
     float: left;
     margin-left: 9vw;
 }
 
 footer
 {
+    margin: 0;
+    padding: 0;
     background-color: orange;
     clear: left;
+}
+
+.haupt
+{
+    padding: 2vh 0 2vh 0;
+    height: 10vh;
 }
