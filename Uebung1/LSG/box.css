@@ -5,51 +5,75 @@ body
 }
 header
 {
-    color: green;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+h3
+{
+    text-align: center;   
+}
+
+p
+{
+    padding: 5px;
 }
 
 nav
 {
     background-color: green;
     width: 10vw;
-    min-width: 5vh;
-    height: 10vh;
+    min-width: 10vw;
+    height: auto;
     float: left;
+    margin: 0;
 }
 
 article 
 {
     background-color: yellow;
-    width: 50vw;
-    height: 10vh;
+    width: 60vw;
+    height: auto;
     float: left;
-    margin-left: 9vw;
+    margin-left: 2vw;
 }
 
 aside
 {
     background-color: red;
-    width: 20vw;
-    height: 10vh;
+    width: 24vw;
+    height: auto;
     float: left;
-    margin-left: 9vw;
+    margin-left: 2vw;
 }
 
 footer
 {
     margin: 0;
-    padding: 0;
-    background-color: orange;
+    padding: 1vh 0 1vh 0;
+    width: 98vw;
     clear: left;
+    overflow: hidden;
 }
 
 .haupt
 {
     padding: 2vh 0 2vh 0;
-    height: 10vh;
+    height: auto;
+}
+
+.inline
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inline li
+{
+    width: 33%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px)

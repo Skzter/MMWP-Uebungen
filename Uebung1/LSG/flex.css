@@ -1,0 +1,109 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+header
+{
+    background-color: blue;
+    width: 100vw;
+    height: auto;
+}
+
+header h1
+{
+    text-align: center;
+}
+
+nav
+{
+    background-color: aqua;
+    height: auto;
+    width: 15vw;
+}
+
+article
+{
+    background-color: blueviolet;
+    height: auto;
+    width: 65vw;
+}
+
+article h3
+{
+    text-align: center;
+}
+
+aside
+{
+    background-color: plum;
+    height: auto;
+    width: 20vw;
+}
+
+aside h3
+{
+    text-align: center;
+}
+
+p
+{
+    margin: 2vw;
+}
+
+footer
+{
+    background-color: red;
+    height: auto;
+    width: 100vw;
+}
+
+.inline
+{
+    list-style: none;
+    margin: 0;
+    margin-top: 1vh;
+    padding: 0;
+}
+
+.inline li
+{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.aussenbox
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.innenbox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .innenbox
+    {
+        flex-direction: column;
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+
+    article
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        width: 100%;
+    }
+}
