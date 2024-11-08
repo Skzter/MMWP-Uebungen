@@ -73,6 +73,7 @@ footer
     width: 33%;
     text-align: center;
 }
+
 .aussenbox
 {
     display: flex;
@@ -85,9 +86,48 @@ footer
     flex-direction: row;
 }
 
+.innen-innenbox
+{
+    display: flex;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 768px)
 {
+    .innen-innenbox
+    {
+        flex-direction: row;
+    }
+
     .innenbox
+    {
+        flex-direction: column;
+    }
+
+    nav
+    {
+        width: 30%;
+    }
+
+    article
+    {
+        width: 70%;
+    }
+
+    aside
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .innenbox
+    {
+        flex-direction: column;
+    }
+
+    .innen-innenbox
     {
         flex-direction: column;
     }
