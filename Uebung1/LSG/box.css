@@ -1,6 +1,6 @@
 body
 {
-    margin: 0 1vw 0 1vw;
+    margin: 0;
     padding: 0;
 }
 header
@@ -8,6 +8,7 @@ header
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: blue;
 }
 
 h3
@@ -22,7 +23,7 @@ p
 
 nav
 {
-    background-color: green;
+    background-color: aqua;
     width: 10vw;
     min-width: 10vw;
     height: auto;
@@ -32,28 +33,27 @@ nav
 
 article 
 {
-    background-color: yellow;
+    background-color: blueviolet;
     width: 60vw;
     height: auto;
     float: left;
-    margin-left: 2vw;
 }
 
 aside
 {
-    background-color: red;
-    width: 24vw;
+    background-color: plum;
+    width: 30vw;
     height: auto;
     float: left;
-    margin-left: 2vw;
 }
 
 footer
 {
     margin: 0;
     padding: 1vh 0 1vh 0;
-    width: 98vw;
+    width: 100vw;
     clear: left;
+    background-color: red;
     overflow: hidden;
 }
 
@@ -82,22 +82,20 @@ footer
     nav
     {
         float: left;
-        width: 25%;
+        width: 30%;
         margin: 0;
     }
 
     article
     {
         float: left;
-        width: 65%;
-        margin: 0 0 0 10%;
+        width: 70%;
     }
 
     aside
     {
         clear: both;
         width: 100%;
-        margin-left: 0;
     }
 }
 
