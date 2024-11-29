@@ -11,7 +11,7 @@
     <body class="bg-dark">
         <div class="d-flex flex-row">
             <!-- Navbar it in -->
-            <div class="bg-light d-sm-none d-none d-md-flex flex-column justify-content-center " style="width: 14vw; height: 100vh;">
+            <div class="bg-light d-sm-none d-none d-md-flex flex-column justify-content-center w-14 h-100">
                 <ul class="nav nav-pills nav-flush flex-column m-0 text-center">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link py-3 border-bottom rounded-0">
@@ -51,11 +51,11 @@
                 </ul>
             </div>
 
-            <div class="container p-0">
+            <div class="container-fluid p-0 m-0">
                 <!-- Hauptseite it in -->
-                <div class="row">
-                    <div class="col p-0">
-                        <div class="card bg-info w-100">
+                <div class="row justify-content-center m-0">
+                    <div class="col-12 px-5">
+                        <div class="card bg-info p-0">
                             <div class="card-body text-light">
                                 <p>Vincent - Yeah Yeah <p>
                             </div>
@@ -64,9 +64,9 @@
                 </div>
 
                 <!-- CODE -->
-                <div class="row gy-5">
-                    <div class="col">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-center px-5">
+                    <div class="col-12 col-md-6">
+                        <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -74,7 +74,7 @@
                                     </button>
                                 </h2>
 
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseOne" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
                                     </div>
@@ -83,8 +83,8 @@
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="col-12 col-md-6">
+                        <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -92,7 +92,7 @@
                                     </button>
                                 </h2>
                                 
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
                                     </div>
@@ -100,11 +100,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="col-12 col-md-6">
+                        <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -112,7 +110,7 @@
                                     </button>
                                 </h2>
 
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseThree" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
                                     </div>
@@ -121,8 +119,8 @@
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="col-12 col-md-6">
+                        <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -130,7 +128,7 @@
                                     </button>
                                 </h2>
                                 
-                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseFour" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
                                     </div>
@@ -141,8 +139,8 @@
                 </div>
 
                 <!-- Volleyball -->
-                <div class="row">
-                    <div class="col text-light bg-danger">
+                <div class="row m-0 px-5 justify-content-center">
+                    <div class="col-12 text-light bg-danger">
                         <h2>
                             Volleyball
                         </h2>
@@ -150,9 +148,11 @@
                 </div>
 
                 <!-- Gaming -->
-                <div class="row">
-                    <div class="col text-light bg-warning">
-                        Gaming
+                <div class="row m-0 px-5 justify-content-center">
+                    <div class="col-12 text-light bg-warning">
+                        <h2>
+                            Gaming
+                        </h2>
                     </div>
                 </div>
             </div>
