@@ -1,1 +1,7 @@
-
+@media only screen and (min-width: 768px) 
+{
+    .container-fluid
+    {
+        margin-left: 112px;
+    }
+}
