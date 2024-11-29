@@ -5,3 +5,28 @@
         margin-left: 112px;
     }
 }
+
+.bgdark
+{
+    background-color: #030027;
+}
+
+.bglight
+{
+    background-color: #151e3f;
+}
+
+.bgdanger
+{
+    background-color: #c16e70;
+}
+
+.textlight
+{
+    color: #f2f3d9;
+}
+
+.textdark
+{
+    color: #dc9e82;
+}

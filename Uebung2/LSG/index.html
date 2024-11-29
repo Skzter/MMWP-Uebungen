@@ -8,10 +8,10 @@
         <link href="index.css" rel="stylesheet">
     </head>
     
-    <body class="bg-dark">
+    <body class="bgdark">
         <div class="d-flex flex-row">
             <!-- Navbar it in -->
-            <div class="bg-light d-sm-none d-none d-md-flex flex-column justify-content-evenly position-fixed vh-100 overflow-hidden">
+            <div class="bglight d-sm-none d-none d-md-flex flex-column justify-content-evenly position-fixed vh-100 overflow-hidden">
                 <ul class="nav nav-pills nav-flush flex-column m-0 text-center">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link py-3 border-bottom rounded-0">
@@ -53,18 +53,21 @@
 
             <!-- Hauptseite it in -->
             <div class="container-fluid p-0 overflow-hidden">
-                <div class="row justify-content-center m-0 px-5 g-3">
-                    <div class="col-12 p-0">
-                        <div class="card bg-info p-0 vh-100">
-                            <div class="card-body text-light">
-                                <p>Vincent - Yeah Yeah <p>
+                <div class="row justify-content-center m-0 px-5 gy-3">
+                    <div class="col-12 p-0 my-3">
+                        <div class="card bglight p-0">
+                            <div class="card-body textlight text-center vh-75">
+                                <h1>Hallo! Ich bin Vincent</h1>
+                                <p> Aspiring Back End Developer </p> 
+                                <p>Medieninformatik Bachelor an der HTWK Leipzig </p>
+                                <p> Leipzig, Deutschland </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- CODE -->
-                <div class="row row-cols-1 row-cols-md-2 justify-content-center px-5 vh-100" id="code">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-center px-5" id="code">
                     <div class="col-12 col-md-6 gy-3">
                         <div class="accordion accordion-flush">
                             <div class="accordion-item">
@@ -76,14 +79,15 @@
 
                                 <div id="flush-collapseOne" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                                        <h3 class="text-center"> Spiel im Terminal <a class="fs-6" href="https://github.com/Skzter/dame">Github</a></h3>
+                                        <p style="text-align: justify"> Ich habe als Abschlussprojekt im ersten Semester im Modul Grundlagen der Programmierung ein abgewandeltes Damespiel mit Terminal User Interface in C++ entwickelt.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 gy-3">
                         <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -94,14 +98,15 @@
                                 
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                                        <h3 class="text-center"> Work in Progress <a class="fs-6" href="https://github.com/Skzter/DUEP">Github</a></h3>
+                                        <p style="text-align: justify"> In HWP müssen wir ein Datenübertragungsprotokoll (DUEP) entwickeln, welches Dateien verschickt von PC zu PC mithilfe des <a href="https://github.com/devfix/b15f">B15F</a> und einem <a href="https://www.arduino.cc">Arduino</a>. Das Protokoll haben wir grade erst angefangen und arbeiten mehr oder weniger dran.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 gy-3">
                         <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -112,14 +117,15 @@
 
                                 <div id="flush-collapseThree" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                                        <h3 class="text-center"> Spiel mit GUI <a class="fs-6" href="https://github.com/Brubi25/Abschlussprojekt-Kniffel">Github</a></h3>
+                                        <p style="text-align: justify"> Im zweiten Semester habe ich gemeinsam mit 2 Kommilitonen Kniffel in Java entwickelt. Dabei lag der Fokus auf der Umsetzung des GUIs mit Hilfe der Swing-Library.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 gy-3">
                         <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -130,7 +136,8 @@
                                 
                                 <div id="flush-collapseFour" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                                        <h3 class="text-center"> Playbook/Linktree/Tutorials <a class="fs-6" href="https://imweb.imn.htwk-leipzig.de/~vgoetze1/">Webseite<a></h3>
+                                        <p style="text-align: justify"> Im Rahmen des Ersti-Coachings habe ich für die Erstis eine Webseite mit <a href="https://www.mkdocs.org">MkDocs</a> erstellt. Darauf finden die Erstis relevante Informationen für das Erste Semester, einen Wochenplan (das Playbook xD), Links zu verschiedenen Inhalten und aktualisierte Technik-Tutorials für die Einrichtung von Eduroa und dem VPN.</p>
                                     </div>
                                 </div>
                             </div>
@@ -140,8 +147,8 @@
 
                 <!-- Volleyball -->
                 <div class="row row-cols-1 m-0 px-5 justify-content-center gy-3">
-                    <div class="col-12 text-light bg-danger">
-                        <h2 id="volleyball">
+                    <div class="col-12 textlight bgdanger">
+                        <h2 id="volleyball" class="text-center">
                             Volleyball
                         </h2>
 
@@ -155,26 +162,14 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="pictures/frankreich.jpg" class="d-block w-100" alt="Team Frankreich Paris">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Some representative placeholder content for the first slide.</p>
-                                    </div>
                                 </div>
 
                                 <div class="carousel-item">
                                     <img src="pictures/beach.jpg" class="d-block w-100" alt="Beach-Arena Paris">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
-                                    </div>
                                 </div>
 
                                 <div class="carousel-item">
                                     <img src="pictures/brvolleys.jpg" class="d-block w-100" alt="Berlin Recycling Volleys">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
-                                    </div>
                                 </div>
                             </div>
 
@@ -188,33 +183,17 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-primary">Left</button>
-                            <button type="button" class="btn btn-primary">Middle</button>
-                            <button type="button" class="btn btn-primary">Right</button>
-                        </div>
-                        
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                        <br>
-                        
-                        <p>
-                            Lorem Ipsum
-                        </p>
-                        <br>
                     </div>
 
                     <!-- Gaming -->
-                    <div class="col-12 text-light bg-warning vh-100">
+                    <div class="col-12 textlight bgdanger vh-100">
                         <h2 id="gaming">
                             Gaming
                         </h2>
                     </div>
                 
                     <!-- Bootstrap -->
-                    <div class="col-12 text-light bg-success vh-100">
+                    <div class="col-12 textlight bgdanger vh-100">
                         <h2 id="bootstrap">
                             Bootstrap
                         </h2>
