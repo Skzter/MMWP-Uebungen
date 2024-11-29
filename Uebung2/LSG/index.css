@@ -2,7 +2,7 @@
 {
     .container-fluid
     {
-        margin-left: 112px;
+       margin-left: 112px;
     }
 }
 
@@ -26,7 +26,18 @@
     color: #f2f3d9;
 }
 
-.textdark
+.bgwarning
 {
-    color: #dc9e82;
+    background-color: #dc9e82;
+}
+
+.blocksatz
+{
+    text-align: justify;
+}
+
+.borderwarning
+{
+    border-color: #dc9e82;
+    color: #dc9e82; 
 }
