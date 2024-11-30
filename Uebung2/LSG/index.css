@@ -39,6 +39,11 @@
     }
 }
 
+svg 
+{
+    fill: #f2f3d9 !important;
+}
+
 .mtmd
 {
     overflow-x: hidden !important;
