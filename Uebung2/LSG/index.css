@@ -4,6 +4,37 @@
     {
        margin-left: 112px;
     }
+    
+    ul > li > a 
+    {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .mtmd
+    {
+        margin-top: 59px;
+    }
+
+    ul > li > a > svg
+    {
+        height: 25px !important; 
+        width: 25px !important;
+    }
+
+    ul > li > a > img
+    {
+        height: 25px !important; 
+        width: 25px !important;
+    }
+
+    ul > li > a
+    {
+        border-bottom: 0;
+        border-right: 1px solid #dee2e6 !important;
+    }
 }
 
 .bgdark
