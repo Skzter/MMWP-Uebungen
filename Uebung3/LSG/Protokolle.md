@@ -3,7 +3,7 @@
 - Client schickt Anfrage an den Server 
 - Server antwortet
 Beispiel:
-1. Man gibt Link zur Webseite eine [skzter.dev](https://skzter.dev/)
+1. Man gibt Link zur Webseite ein [skzter.dev](https://skzter.dev/)
 2. Anfrage an Rechner mit Hostname *skzter.dev*, Ressource index.* zurückzusenden
 3. Name *skzter.dev* wird durch DNS-Protokoll in IP-Adresse umgesetzt
 4. für Übertragung wird über TCP auf Standard-Port 80 (HTTP) oder 443 (HTTPS) GET-Anforderung gesendet
@@ -20,9 +20,13 @@ Beispiel:
 - muss serverseitig konfiguriert werden
 - Nutzer danach gegenüber Server authentifiziert aber Server nicht gegenüber Nutzer -> Gefahr Spoofing Angriff 
 - HTTPS löst Problem durch digitale Zertifikate die Identität des Webservers bestätigen 
-### Beispielanfrage mit HTTP/1.1
-- besteht aus request zeile 
-### 
+### Request mit HTTP/1.1
+- **Request line** mit Request-Methode, Leerzeichen, angefordertet URI, Leerzeichen, Protokollversion, Enter und Newline
+- -> ``` GET / HTTP/3 ```
+- eine oder mehrere **Request Header Felder** mit Name, Doppelpunkt, Leerzeichen (optional), Wert, Enter und Newline
+- -> ``` Host: skzter.dev
+         Accept-Language: de ```
+### Respone mit HTTP/1.1 
 ## HTTPS und TLS
 ## HTTP-Headerfelder
 ## HTTP-Statuscodes
