@@ -74,5 +74,5 @@ Content-Type: text/html; charset=UTF-8
     - Fehler aufgetreten, dessen Ursache beim Server liegt
 
 ## HTTPS und TLS
-## HTTP-Headerfelder
-## HTTP-Statuscodes
+
+
