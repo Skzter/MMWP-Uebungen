@@ -25,7 +25,14 @@ Beispiel:
 - -> ``` GET / HTTP/3 ```
 - eine oder mehrere **Request Header Felder** mit Name, Doppelpunkt, Leerzeichen (optional), Wert, Enter und Newline
 - -> ``` Host: skzter.dev
-         Accept-Language: de ```
+Accept-Language: de ```
+
+
+```
+Host: skzter.dev
+Accept-Language: de
+```
+
 ### Respone mit HTTP/1.1 
 ## HTTPS und TLS
 ## HTTP-Headerfelder
