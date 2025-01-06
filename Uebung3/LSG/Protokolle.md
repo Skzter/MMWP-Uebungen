@@ -25,7 +25,9 @@ Beispiel:
 
 ### Request mit HTTP/1.1
 - **Request line** mit Request-Methode, Leerzeichen, angefordertet URI, Leerzeichen, Protokollversion, Enter und Newline
-``` GET / HTTP/3 ```
+```
+GET / HTTP/3 
+```
 - eine oder mehrere **Request Header Felder** mit Name, Doppelpunkt, Leerzeichen (optional), Wert, Enter und Newline
 ```
 Host: skzter.dev
@@ -50,9 +52,13 @@ Accept-Language: de
 
 ### Respone mit HTTP/1.1 
 - eine **Status line** mit Protokollversion, Leerzeichen, Statuscode, optionale Antwort, Enter und Newline
-``` HTTP/1.1 200 OK ```
+``` 
+HTTP/1.1 200 OK
+```
 - keine bis mehrere **Response Header Felder** mit Name, Doppelpunkt, (Leerzeichen), Wert, (Leerzeichen), Enter und Newline
-``` Content-Type: text/html; charset=UTF-8 ```
+```
+Content-Type: text/html; charset=UTF-8 
+```
 - optionaler message body
 
 ### Response Status Codes
