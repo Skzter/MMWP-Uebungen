@@ -108,7 +108,46 @@ Content-Type: text/html; charset=UTF-8
 - https://en.wikipedia.org/wiki/HTTP
 - https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 - https://de.wikipedia.org/wiki/QUIC
-## HTTPS und TLS
 
+## HTTPS und SSL/TLS
+- Hypertext Transfer Protocol Secure
+- wie HTTP nur das zusätzliche Verschlüsselung Daten mit SSL/TLS geschieht
+- SSl Vorläufer TLS, wurde vollständig durch TLS ersetzt
 
+### Funktionsweise TLS
+- Handshake für sicheren Verbindungsaufbau
+1. **ClientHello:**
+   - Der Client sendet:
+     - Unterstützte TLS-Versionen.
+     - Verschlüsselungsverfahren (Cipher Suites).
+     - Zufallsdaten (Random Values).
+   - Optional: Unterstützte Kompressionsmethoden und andere Erweiterungen.
 
+2. **ServerHello:**
+   - Der Server antwortet mit:
+     - Der gewählten TLS-Version.
+     - Der ausgewählten Cipher Suite.
+     - Eigenen Zufallsdaten.
+   - Zusätzlich:
+     - Ein **Zertifikat** zur Authentifizierung des Servers (enthält den öffentlichen Schlüssel).
+
+3. **Schlüsselaustausch:**
+   - Der Client überprüft das Zertifikat des Servers.
+   - Basierend auf dem Schlüsselaustauschverfahren (z. B. RSA oder Diffie-Hellman):
+     - Der Client generiert ein Premaster-Secret (bei RSA).
+     - Bei Ephemeral-Diffie-Hellman (ECDHE): Beide Seiten tauschen kryptografische Parameter aus, um einen gemeinsamen Schlüssel zu berechnen.
+
+4. **Session Key:**
+   - Der symmetrische Schlüssel (Session Key) wird von beiden Seiten aus dem Premaster-Secret und Zufallsdaten abgeleitet.
+
+5. **Bestätigung:**
+   - Beide Seiten senden verschlüsselte Nachrichten, um den Handshake abzuschließen und die Verbindung zu aktivieren.
+
+- Datenübertragungs-Phase
+  - Die Kommunikation erfolgt mit symmetrischer Verschlüsselung (z. B. AES).
+  - Jede Nachricht enthält einen **Message Authentication Code (MAC)**, um die Integrität zu gewährleisten.
+  - Vertraulichkeit und Datenintegrität werden in Echtzeit gesichert.
+
+-  Beendigungs-Phase
+   - Beide Seiten tauschen **Close Notify**-Nachrichten aus.
+   - Dies stellt sicher, dass die Verbindung geordnet geschlossen wird, und verhindert unvollständige Datenübertragung oder Manipulationen.
