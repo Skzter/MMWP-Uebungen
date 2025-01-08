@@ -1,3 +1,34 @@
+# Was ist ein Webserver
+- Kann sich auf Hardware oder Software beziehen, oder beides zusammen
+  - Hardware: Computer, der Daten der Website speichert, und mit dem Internet verbunden ist, um darüber mit anderen Geräten Dateien auszutauschen
+  - Software: verschiedene Programme, die verwalten wie Nutzer auf Daten zugreifen können. Minimal ein HTTP-Server, der URL’s auswerten und Daten an  Clients schicken kann. 
+- Der simpelste Webserver akzeptiert HTTP Anfragern des Browsers, und antwortet auf diese mit dem angeforderten Dokument
+  - Das wäre ein statischer Webserver, da er Dateien wie sie auf dem Server liegen an den Nutzer weiterreicht
+  - Etwas komplexer, gibt es ebenfalls dynamische Webserver, welche auf einem statischen Webserver aufbauen, und diesen mit weiterer Software erweitern.
+    - Meist Anwendungsserver und Datenbank
+    - Dynamisch, da Anwendungsserver die vom Client angefragten Dateien erst zuvor mit Informationen aus der Datenbank aktualisiert, bevor er diese an den Client schickt.
+      - Bspw. Wikipedia: einzelne Seiten keine ausgeschriebenen HTML Dokumente, sondern Templates, welche mit in DB gespeicherten Seiteninhalten gefüllt werden
+- An sich erfüllt jeder Internetfähige Computer diese Anforderungen, d.h. jeder könnte einen Webserver auf seinem privaten Computer hosten. 
+  - Eigens dafür vorgesehener Webserver hat aber mehrere Vorteile
+    - Von Störungen abgesehen immer erreichbar und funktionsfähig
+    - Kann eine feste IP-Adresse habe (Nicht alle Internetanbieter bieten feste IP’s für private Anschlüsse)
+    - Wird dieser von einem Anbieter instandgehalten, falls dieser gemietet wurde
+  - Bekannte Anbieter: Strato, IONOS, Netcup
+  - Quelle: https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server
+
+# Was ist DNS
+- Domain Name System
+- Weltweit verteilter, hierarchischer Verzeichnisdienst der den Namensraum des Internets verwaltet
+- Verzeichnis, ordnet Domainnamen die IPs des zugehörigen Servers zu
+- Hierarchisch, da der Namensraum Baumförmig aufgebaut ist
+- Namensraum:
+  - Domainname besteht von vorne nach hinten aus einem Pfad von Blatt zu Wurzel des Baumes
+  - Erste Ebene des Baumes, also das Ende des Domainnamens, heißt Top-Level-Domain. Bsp.: .de, .com, .dev. Diese ist oft Länderabhängig, kann sich aber auch auf den Inhalt der Website beziehen
+  - Für jede Top-Level-Domain existieren eigene Nameserver, welche wiederum die IP-Adresse der Second-Level-Domain, also dem (von rechts) zweiten Teil der Domain, auflösen. Bsp.: wikipedia.org, skzter.dev, Google.com
+  - Weitere Stufen möglich, bspw. de.wikipedia.org, welche dann über einen Namensserver von dem Webserver selber aufgelöst werden müssen, in diesem Fall Wikipedia. Maximale Länge: 255 Bytes.
+  - Da die Auflösung von Second-Level-Domains über auf die Top-Level-Domains zugeordnete Namensserver passiert, müssen diese Server öffentlich und offiziell verzeichnet sein. Daher müssen Domains immer von einem Provider gemietet werden, damit dieser sie dann bei dem zugehörigen Namensserver registriert. Kostet etwa 5 – 15€ im Jahr, ist aber oft bei Hosting Verträgen mit dabei. Sprich: Hosting bei Strato oder IONOS (das sind beides auch domain name provider) enthält oft auch kostenlose Domainnamen
+  - Quelle: https://de.wikipedia.org/wiki/Domain_Name_System
+
 # Wie funktioniert ein Webserver
 - Client/Server Prinzip
 - Client schickt Anfrage an den Server 
