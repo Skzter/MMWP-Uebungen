@@ -57,7 +57,7 @@ Beispiel:
 ### Request mit HTTP/1.1
 - **Request line** mit Request-Methode, Leerzeichen, angefordertet URI, Leerzeichen, Protokollversion, Enter und Newline
 ```
-GET / HTTP/3 
+GET / HTTP/1.1
 ```
 - eine oder mehrere **Request Header Felder** mit Name, Doppelpunkt, Leerzeichen (optional), Wert, Enter und Newline
 ```
@@ -104,6 +104,11 @@ Content-Type: text/html; charset=UTF-8
 - 5xx - Server-Fehler
     - Fehler aufgetreten, dessen Ursache beim Server liegt
 
+### Quellen
+- https://en.wikipedia.org/wiki/HTTP
+- https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+- https://de.wikipedia.org/wiki/QUIC
 ## HTTPS und TLS
+
 
 
