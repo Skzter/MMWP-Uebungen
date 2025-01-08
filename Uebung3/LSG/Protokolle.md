@@ -151,3 +151,6 @@ Content-Type: text/html; charset=UTF-8
 -  Beendigungs-Phase
    - Beide Seiten tauschen **Close Notify**-Nachrichten aus.
    - Dies stellt sicher, dass die Verbindung geordnet geschlossen wird, und verhindert unvollständige Datenübertragung oder Manipulationen.
+
+### Quellen
+- https://de.wikipedia.org/wiki/Transport_Layer_Security
