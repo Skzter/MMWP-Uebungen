@@ -96,9 +96,67 @@ body
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
+    padding: 10px;
 }
 
 #a5-subgrid > div
 {
     border: solid green 2px;
 }
+
+#a6
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#a6 > div
+{
+    border: solid purple 2px;
+}
+
+#a6-s1
+{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#a6-s1 > div
+ {
+     background-color: pink;
+ }
+
+#a6-s2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#a6-s2 > div
+ {
+     background-color: pink;
+ }
+
+#a6-s3
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#a6-s3 > div
+ {
+     background-color: pink;
+ }
