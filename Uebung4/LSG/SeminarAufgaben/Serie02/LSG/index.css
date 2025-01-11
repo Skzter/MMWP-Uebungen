@@ -1,0 +1,104 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper
+{
+    float: left;
+}
+
+#a2-1 > img
+{
+    float: left;
+}
+
+#a2-1
+{
+    float: left;
+    width: 60vw;
+    height: auto;
+}
+
+#B
+{
+    float: left;
+    width: 20vw;
+}
+
+#C
+{
+    float: left;
+    width: 20vw;
+}
+
+#a3
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#a3 > p
+{
+    flex: 1;
+}
+
+#a3 > p:nth-of-type(3)
+{
+    flex: 2;
+}
+
+#a4 
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#a4 > p
+{
+    border: solid black 1px;
+}
+
+#a4-3
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#a4-3 > p
+{
+    border: solid pink 2px;
+}
+
+#a5
+{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#a5 > div
+{
+    border: solid blue 2px;
+}
+
+#a5-subgrid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#a5-subgrid > div
+{
+    border: solid green 2px;
+}
