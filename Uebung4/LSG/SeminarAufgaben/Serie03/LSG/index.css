@@ -1,3 +1,8 @@
+img
+{
+    width: 100%;
+}
+
 .wrapper
 {
     display: grid;
@@ -21,4 +26,21 @@ footer > ul
     list-style: none;
 }
 
+@media (max-width: 768px)
+{
+    .wrapper
+    {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+}
 
+@media (min-width: 1250px) and (orientation: landscape) 
+{
+   .wrapper
+   {
+       grid-template-rows: repeat(2, 1fr);
+       grid-template-columns: repeat(8, 1fr);
+   }
+}
