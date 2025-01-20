@@ -68,8 +68,6 @@ function spin()
 
   //innen stück was rotiert
   /*
-  const now = new Date();
-  const sec = now.getSeconds();
   ctx.translate(75, 75);
   ctx.rotate((45 * Math.PI) / 180);
   ctx.strokeStyle = "red";
@@ -80,12 +78,30 @@ function spin()
   ctx.stroke();
   */
 
+  /*
   ctx.fillStyle = "red";
-  ctx.fillRect(0, 0, 70, 20);
+  ctx.translate(75,75)
+  ctx.fillRect(0, 0, 50, 5);
   ctx.rotate((45 * Math.PI) / 180);
-  ctx.fillRect(0, 0, 70, 20);
-
+  ctx.fillRect(0, 0, 50, 5);
+  ctx.rotate((135 * Math.PI) / 180);
+  ctx.beginPath();
+  ctx.moveTo(75, 75);
+  ctx.lineTo(75, 125);
+  ctx.stroke();
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  */
+  const now = new Date();
+  const sec = now.getSeconds();
+  ctx.lineWidth = 5;
+  ctx.translate(75,75)
+  ctx.rotate((sec * Math.PI) / 30);
+  ctx.moveTo(0, 0);
+  ctx.lineTo(50, 0);
+  ctx.stroke();
+  ctx.restore();
+  
+  window.requestAnimationFrame(spin);
 }
-
 
 spin();
