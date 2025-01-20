@@ -50,7 +50,42 @@ function macheBild()
 }
 
 const ctx = document.getElementById('canvas').getContext("2d");
+
 function spin()
 {
+  ctx.clearRect(0,0,150,150);
+  ctx.fillStyle = "yellow";
+  ctx.strokeStyle = "black";
+  ctx.save();
+
+  //Außenkreis
+  ctx.beginPath()
+  ctx.arc(75, 75, 50, 0, 2*Math.PI);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.fill();
+  ctx.save();
+
+  //innen stück was rotiert
+  /*
+  const now = new Date();
+  const sec = now.getSeconds();
+  ctx.translate(75, 75);
+  ctx.rotate((45 * Math.PI) / 180);
+  ctx.strokeStyle = "red";
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(75,75);
+  ctx.lineTo(125, 75);
+  ctx.stroke();
+  */
+
+  ctx.fillStyle = "red";
+  ctx.fillRect(0, 0, 70, 20);
+  ctx.rotate((45 * Math.PI) / 180);
+  ctx.fillRect(0, 0, 70, 20);
 
 }
+
+
+spin();
