@@ -10,13 +10,15 @@
     <body>
         <button> doSomething </button>
         <script>
+            /*
             const webworker = new Worker("berechnung.js");
-            webworker.addEventListener("message", function(messageEvent) {
-                alert("Ergebnis: " + messageEvent.data);
-            });
             webworker.postMessage("Run");
-
-        </script>
+            webworker.onmessage = function(workerMessage) {
+              alert("Ergebnis: " + workerMessage.data);
+              webworker.terminate();    
+            };
+            */
+        </script> 
         <script src="index.js"></script>
     </body>
 </html>
