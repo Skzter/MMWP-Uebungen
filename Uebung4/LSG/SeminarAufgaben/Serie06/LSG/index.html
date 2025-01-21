@@ -9,6 +9,14 @@
 
     <body>
         <button> doSomething </button>
+        <script>
+            const webworker = new Worker("berechnung.js");
+            webworker.addEventListener("message", function(messageEvent) {
+                alert("Ergebnis: " + messageEvent.data);
+            });
+            webworker.postMessage("Run");
+
+        </script>
         <script src="index.js"></script>
     </body>
 </html>
