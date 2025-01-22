@@ -3,22 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Serie 06</title>
     </head>
 
     <body>
         <button> doSomething </button>
-        <script>
-            /*
-            const webworker = new Worker("berechnung.js");
-            webworker.postMessage("Run");
-            webworker.onmessage = function(workerMessage) {
-              alert("Ergebnis: " + workerMessage.data);
-              webworker.terminate();    
-            };
-            */
-        </script> 
+        <!-- Script welches ausgeführt werden soll -->
+        <script id="worker" type="application/x-worker">
+            let i, summe = 0;
+            for (i = 0; i < 90000000; i++)
+            {
+                summe += i * i + Math.random();
+            }
+            self.postMessage(summe);
+            self.close();
+        </script>
+
+        <!-- holt script und verwandelt in js datei die ausgeführt wird -->
         <script src="index.js"></script>
     </body>
 </html>
