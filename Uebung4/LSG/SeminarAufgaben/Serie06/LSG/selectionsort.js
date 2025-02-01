@@ -31,20 +31,19 @@ function getSortedArray(arr) {
         ausgabe += val + " ";
     }
 }
-
 //unsortiertes array initialisiert
 var array = [50000];
 for(let i = 50000; i > 0; i--)
 {
     array.push(i);
 }
-
+    
 self.onmessage = function (messageEvent)
 {
     if(messageEvent.data == 'Start')
     {
         selectionsort(array);
-        getSortedArray(array)
+        getSortedArray(array);
     }
     self.postMessage(ausgabe);
     self.close;
