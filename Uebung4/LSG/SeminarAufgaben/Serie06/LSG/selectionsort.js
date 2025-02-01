@@ -25,25 +25,26 @@ function selectionsort (arr)
     }
 }
 
+var ausgabe = "";
 function getSortedArray(arr) {
     for (let val of arr) {
-        sortArray += val + " ";
+        ausgabe += val + " ";
     }
-    return sortArray;
+}
+
+//unsortiertes array initialisiert
+var array = [50000];
+for(let i = 50000; i > 0; i--)
+{
+    array.push(i);
 }
 
 self.onmessage = function (messageEvent)
 {
     if(messageEvent.data == 'Start')
     {
-        //unsortiertes array initialisiert
-        var array = [50000];
-        for(let i = 50000; i > 0; i--)
-        {
-            array.push(i);
-        }
         selectionsort(array);
-        let ausgabe = getSortedArray(array)
+        getSortedArray(array)
     }
     self.postMessage(ausgabe);
     self.close;
