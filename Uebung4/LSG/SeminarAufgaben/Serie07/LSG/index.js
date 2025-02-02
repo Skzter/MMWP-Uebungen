@@ -58,6 +58,7 @@ window.onload = (event) => {
     col.value = "#000000";
 }
 
+// komplett copy paste lmao aber für invert color
 function invertColor(hex) {
     if (hex.indexOf('#') === 0) {
         hex = hex.slice(1);
@@ -89,17 +90,39 @@ function padZero(str, len) {
 
 function addAufgabe()
 {
-    var neueAufg = document.createElement("div");
-    var neueText = document.createTextNode(txt.value);
-    neueAufg.appendChild(neueText);
-    neueAufg.style.backgroundColor = col.value;
-    neueAufg.style.color = invertColor(col.value);
+    let neueAufg = document.createElement("div");
     neueAufg.setAttribute('draggable', true);
-    neueAufg.setAttribute('id', '_' + counter);
-    counter++;
+    currID = '_' + counter;
+    neueAufg.setAttribute('id', currID);
     neueAufg.setAttribute('class', 'task');
+    neueAufg.style.backgroundColor = col.value;
+    neueAufg.style.display = "grid";
+    neueAufg.style.border = "solid black 1px";
+    neueAufg.style.width = "90%";
+    neueAufg.style.margin = "5%";
+    neueAufg.style.gridTemplateColumns = "3fr 1fr 1fr";
+    let neuePara = document.createElement("p");
+    neuePara.innerHTML = txt.value;
+    neuePara.style.color = invertColor(col.value); 
+    let editButton = document.createElement("button");
+    editButton.style.margin = "2px";
+    editButton.innerHTML = "Edit";
+    editButton.onclick = () => {
+        editTask(neuePara);
+    }
+    let editColor = document.createElement("input");
+    editColor.type = "color";
+    editColor.style.margin = "2px";
+    editColor.onchange = () => {
+       neueAufg.style.backgroundColor = editColor.value; 
+       neuePara.style.color = invertColor(editColor.value); 
+    } 
+    neueAufg.appendChild(neuePara);
+    neueAufg.appendChild(editButton);
+    neueAufg.appendChild(editColor);
     neueAufg.addEventListener('dragstart', dragStarthandler);
     aufg_spalte.appendChild(neueAufg);
+    counter++;
 }
 
 function drophandler(dropevent, box)
@@ -127,5 +150,14 @@ function deleteTasks()
     while(startChild.nextSibling != null)
     {
         parent.removeChild(startChild.nextSibling);
+    }
+}
+
+function editTask(para)
+{
+    let newTask = prompt("Text ändern","");
+    if(!(newTask == null || newTask == ""))
+    {
+        para.innerHTML = newTask;
     }
 }
