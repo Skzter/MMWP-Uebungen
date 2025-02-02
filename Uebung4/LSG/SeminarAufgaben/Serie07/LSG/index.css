@@ -1,0 +1,18 @@
+.wrapper
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.zone
+{
+    border: solid black 1px;
+    width: 50%;
+    height: 400px;
+}
+
+.zone.over
+{
+    background-color: purple;
+}
