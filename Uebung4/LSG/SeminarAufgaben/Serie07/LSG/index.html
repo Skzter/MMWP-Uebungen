@@ -20,6 +20,43 @@
             </div>
         </div>
         <h1> Aufgabe 4 </h1>
+        <div id="generator">
+            <form>
+                <label> Aufgabe: </label>
+                <input type="text" id="aufg_text">
+                <label> Farbe: </label>
+                <input type="color" id="aufg_color">
+                <button type="button" id="genAufg" onclick="addAufgabe();">Generieren</button>
+            <form>
+        </div>
+        <div class="container">
+            <div id="aufgaben" ondragover="dragOverhandler(event);" ondrop="drophandler(event, 'aufgaben');">
+                <div class="subcontainer">
+                    <h3> Aufgaben </h3>     
+                </div>
+            </div>
+            <div id="ToDo" ondragover="dragOverhandler(event);" ondrop="drophandler(event, 'ToDo');">
+                <div class="subcontainer">
+                    <h3> ToDo </h3>     
+                </div>
+            </div>
+            <div id="WIP" ondragover="dragOverhandler(event);" ondrop="drophandler(event, 'WIP');">
+                <div class="subcontainer">
+                    <h3> WIP </h3>     
+                </div>
+            </div>
+            <div id="Done" ondragover="dragOverhandler(event);" ondrop="drophandler(event, 'Done');">
+                <div class="subcontainer">
+                    <h3> Done </h3>     
+                </div>
+            </div>
+            <div id="Trash" ondragover="dragOverhandler(event);" ondrop="drophandler(event, 'Trash');">
+                <div class="subcontainer">
+                    <h3> Trash </h3>     
+                    <button type="button" onclick="deleteTasks()">Löschen</button>
+                </div>
+            </div>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

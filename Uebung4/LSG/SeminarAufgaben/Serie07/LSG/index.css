@@ -1,10 +1,10 @@
+/* Aufgabe 1 - 3 */
 .wrapper
 {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-
 .zone
 {
     border: solid black 1px;
@@ -15,4 +15,42 @@
 .zone.over
 {
     background-color: purple;
+}
+
+/* Aufgabe 4 */
+.container
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.container > div
+{
+    border: solid black 1px;
+}
+
+.subcontainer
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    gap: 5px;
+    justify-content: center;
+}
+
+.subcontainer > h3 
+{
+    border: solid purple 1px;
+    padding: 5px;
+}
+
+#generator
+{
+    display: flex;
+    border: solid purple 5px;
+    padding: 15px;
+    justify-content: center;
+    margin-bottom: 2vh;
 }
