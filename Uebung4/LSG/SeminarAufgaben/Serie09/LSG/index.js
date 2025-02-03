@@ -70,10 +70,33 @@ function doStuff(event)
 // form-select
 // form-check-input
 
-let input_form = document.querySelectorAll(".form-control");
+let input_form = document.getElementsByClassName("form-control");
 let input_select = document.querySelector(".form-select");
 let input_check = document.querySelector(".form-check-input");
-console.log(input_form.entries());
-console.log(input_form.keys());
-console.log(input_form.values());
+console.log(input_form);
+console.log(input_check);
 console.log(input_select);
+
+var startTime;
+window.onload = () =>
+{
+    startTime = Date.now();
+}
+for(let i = 0; i < input_form.length; i++)
+{
+    input_form[i].addEventListener("input", () => {
+        let currTime = Date.now();
+        let verg = currTime.getTime - startTime.getTime;
+        console.log("Input in Form bei " + currTime + "|" + verg);
+    });
+}
+
+input_check.addEventListener("input", () => {
+    let currTime = Date.now();
+    console.log("Input in Form bei " + currTime);
+});
+
+input_select.addEventListener("input", () => {
+    let currTime = Date.now();
+    console.log("Input in Form bei " + currTime);
+});
