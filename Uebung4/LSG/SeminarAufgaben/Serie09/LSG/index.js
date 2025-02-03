@@ -64,3 +64,16 @@ function doStuff(event)
     form.reset();
     return true;
 }
+
+// classes
+// form-control
+// form-select
+// form-check-input
+
+let input_form = document.querySelectorAll(".form-control");
+let input_select = document.querySelector(".form-select");
+let input_check = document.querySelector(".form-check-input");
+console.log(input_form.entries());
+console.log(input_form.keys());
+console.log(input_form.values());
+console.log(input_select);
