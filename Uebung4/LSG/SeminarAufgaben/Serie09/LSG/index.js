@@ -61,42 +61,41 @@ function doStuff(event)
     console.log(data);
     entries.push(data);
     console.log(entries);
+    console.log("Nutzer hat " + (verg / 1000).toFixed(2) + "s mit ausfüllen des Formulars verbracht"); 
     form.reset();
     return true;
 }
 
-// classes
-// form-control
-// form-select
-// form-check-input
-
 let input_form = document.getElementsByClassName("form-control");
 let input_select = document.querySelector(".form-select");
 let input_check = document.querySelector(".form-check-input");
-console.log(input_form);
-console.log(input_check);
-console.log(input_select);
 
-var startTime;
 window.onload = () =>
 {
     startTime = Date.now();
+    document.getElementById("form").reset();
 }
+
+var startTime;
+var verg;
+
 for(let i = 0; i < input_form.length; i++)
 {
     input_form[i].addEventListener("input", () => {
         let currTime = Date.now();
-        let verg = currTime.getTime - startTime.getTime;
-        console.log("Input in Form bei " + currTime + "|" + verg);
+        verg = Math.abs(currTime - startTime);
+        console.log("Input in Form bei " + currTime + "| Zeit seit erste Input > " + verg);
     });
 }
 
 input_check.addEventListener("input", () => {
     let currTime = Date.now();
-    console.log("Input in Form bei " + currTime);
+    verg = Math.abs(currTime - startTime);
+    console.log("Input in Form bei " + currTime + "| Zeit seit erste Input > " + verg);
 });
 
 input_select.addEventListener("input", () => {
     let currTime = Date.now();
-    console.log("Input in Form bei " + currTime);
+    verg = Math.abs(currTime - startTime);
+    console.log("Input in Form bei " + currTime + "| Zeit seit erste Input > " + verg);
 });
