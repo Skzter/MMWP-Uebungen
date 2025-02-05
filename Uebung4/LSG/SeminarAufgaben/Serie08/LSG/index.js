@@ -5,6 +5,6 @@ function getText()
         document.getElementById("ajax")
         .innerHTML = xmlO.responseText;
     };
-    xmlO.open("GET", "https://skzter.dev/alt/ajax.txt", true)
+    xmlO.open("GET", "https://skzter.dev/alt/ajax.txt", true);
     xmlO.send();
 }
