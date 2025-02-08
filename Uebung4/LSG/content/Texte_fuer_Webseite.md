@@ -20,7 +20,7 @@
 - November 2022 – Dezember 2022 Miltitzer Grundschule 
 
 ### Arbeit:
-- Juni 2021 – September 2021 WoP Lieferant (Fahrrad)
+- Juni 2021 – Septtember 2021 WoP Lieferant (Fahrrad)
 - Januar 2023 – Juni 2023 WoP Lieferant (Auto)
 - Oktober 2023 – Januar 2024 Kaufland SHK
 
@@ -66,3 +66,10 @@
 
 # Blog
 - 2-3 A4-Seiten über Erstellung Webseite etc und was gelernt in MMWP
+
+# Color Scheme Ideen
+- Primary: Navy Blue (#2C3E50)
+- Secondary: Light Gray (#ECF0F1)
+- Accent: Coral (#E74C3C)
+- Neutral: White (#FFFFFF)
+

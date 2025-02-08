@@ -1,4 +1,11 @@
-h1
+body
 {
-    color: pink;
+    margin: 0;
+    background-color: #2C3E50;
+    color:#ECF0F1;
+}
+
+img
+{
+    height: 100%;
 }

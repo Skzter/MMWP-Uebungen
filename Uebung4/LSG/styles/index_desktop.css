@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav 
+{
+    grid-area: nav;
+    border: solid purple 1px;
+}
+
+main
+{
+    grid-area: main;
+    text-align: center;
+    border: solid black 1px;
+}
+
+.list 
+{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.item
+{
+}
+
+.list .item 
+{
+    transition: .5s;
+    filter: brightness(0);
+}
+
+.list .item:hover 
+{
+    filter: brightness(1);
+    transform: translateZ(150px);
+}
+
+.list .item:hover + * 
+{
+    filter: brightness(0.6);
+    transform: translateZ(100px) rotateY(30deg);
+}
+
+.list .item:hover + * + * 
+{
+    filter: brightness(0.4);
+    transform: translateZ(50px) rotateY(10deg);
+}
+
+.list .item:has(+ *:hover) 
+{
+    filter: brightness(0.6);
+    transform: translateZ(100px) rotateY(-30deg);
+}
+
+.list .item:has(+ * + *:hover) 
+{
+    filter: brightness(0.4);
+    transform: translateZ(50px) rotateY(-10deg);
+}
