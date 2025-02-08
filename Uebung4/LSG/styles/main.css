@@ -1,11 +1,13 @@
+:root {
+    --main-bg-color: #2C3E50;
+    --main-text-color: #ECF0F1;
+    --main-accent-color: #E74C3C;
+  }  
+
 body
 {
     margin: 0;
-    background-color: #2C3E50;
-    color:#ECF0F1;
-}
-
-img
-{
-    height: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: 30px;
 }
