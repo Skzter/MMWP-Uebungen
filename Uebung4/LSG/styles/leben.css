@@ -1,45 +1,4 @@
-a
-{
-    color: var(--main-accent-color);
-    text-decoration: none;
-    height: 100%;
-    text-align: center;
-}
-
-svg
-{
-    height: 100%;
-    width: auto;
-}
-
 h1
 {
-    text-align: center;
     text-decoration: underline;
-}
-
-.container
-{
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 5vh 90vh;
-    margin: 2.5vh 0 2.5vh 0;
-}
-
-.subcontainer
-{
-    display: grid;
-    grid-template-columns: 43vw 43vw;
-    grid-template-rows: 100%;
-    gap: 5vw;
-    margin: 0 4.5vw 0 4.5vw;
-} 
-
-section
-{
-    background-color: var(--main-text-color);
-    border-radius: 25px;
-    color: black;
-    padding: 0 1vw 0 1vw;
-    height: 100%;
 }

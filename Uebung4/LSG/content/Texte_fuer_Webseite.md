@@ -58,7 +58,7 @@
 - Gym ( Knie rehabilitieren)
     - Seit neuestem besuche ich das Gym 2x die Woche und trainiere hauptsächlich Beine (Knieorientiert), da ich Anfang 2024 mich am Knie verletzt habe und so fast nur mit Schmerzen Volleyball spielen konnte. Durch dieses Krafttraining bin ich jedoch auf dem Weg der Besserung und kann (hoffentlich) bald wieder bedenklos und schmerzfrei Volleyball spielen. 
 - Programmieren
-    - Programmieren tu ich seid 2023.
+    - Meine ersten Erfahrungen mit dem Programmieren habe ich im Informatik Unterricht mit Python und Delphi gesammelt. Durch das Studium habe ich C++ im ersten Semester und Java im zweiten Semester kennengelernt. Zudem habe ich HTML, CSS und JavaScript kennnegelernt und erste eigene kleine Webseiten gebaut für Präsentation oder als Prüfungsbestandteil. 
 - Anime gucken mit Freundin
 - Gaming
 
