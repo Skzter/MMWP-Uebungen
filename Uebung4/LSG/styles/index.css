@@ -23,7 +23,7 @@ nav
 
 .list a
 {
-    padding: 5px;
+    padding: 1vh 0 1vh 0;
     background-color: var(--main-text-color);
     border-radius: 25px;
 }
@@ -32,11 +32,12 @@ nav
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0 15px 0 15px;
-    height: 100vh;
+    padding: 0 5vw 0 5vw;
+    height: 98vh;
     justify-content: center;
     align-content: center;
-    gap: 10px;
+    gap: 2vh;
+
 }
 
 div > p
