@@ -34,7 +34,75 @@
             <h1  itemprop="name" class="text-decoration-none"> Bericht zur Erstellung der Webseite </h1>
             <p class="m-0 p-0" style="font-size: medium"> Februar 10, 2025 von Vincent </p>
             <hr>
-            <p itemprop="description"> Hier kommt später mal text lmao </p>
+            <p itemprop="description">
+                Dies ist mein Abschlussbericht zur Erstellung meiner eigenen Portfolioseite im Modul Multimediale Webprogrammierung als
+                Prüfungsleistung. Zudem werde ich über meine Erfahrungen und Lernerkenntnisse im Modul Multimediale Webprogrammierung berichten.
+            </p>
+            <br>
+            <p itemprop="description">
+                Als erstes werde ich über die eingesetzten Medienformate reden. Ich habe für die Icons SVGs eingesetzt, da diese auf
+                jeder belieben Bildschirmbreite gut aussehen auf Grund ihrer Skalierbarkeit. Des Weiteren sind die SVGs teilweise Inline
+                eingebunden mit dem Path in der HTML-Datei, um die Ladezeiten zu verbessern, da dann weniger Requests an den Server
+                geschickt werden und man Inline-SVGs mit CSS und JavaScript zu beeinflussen. Die Restlichen Bilder sind in den Formaten
+                PNG und WebP, da diese zum eine sehr breite Browserunterstützung haben und bei Kompression ihre Qualität behalten. Dies
+                war von Vorteil, da ich jedes dieser Bilder auf der Webseite komprimiert habe mit <a href="https://tinypng.com">TinyPNG</a>, um die
+                Ladezeit zu verbessern.
+            </p>
+            <br>
+            <p itemprop="description">
+                Das Layout der Webseite basiert auf einer Hauptseite, von der man in die einzelnen Unterseiten gelangt, um spezifischere
+                Informationen zu finden. Auf einem Gerät mit einer Pixelbreite größer 992 findet auf der Hauptseite eine Reihe von
+                Karten, welche beim darüber-hovern hervorgehoben werden. Bei kleineren Geräten werden die Karten zu größeren Buttons,
+                die untereinander angezeigt werden. Die ist für kleiner Geräte eine bessere Lösung, da sonst die Karten zu klein werden
+                und man die Bilder nicht mehr erkennt. Auf den Unterseiten handelt es sich bei größeren Geräten um Grids, welche meist
+                in 2 Spalten geteilt sind. Bei kleineren Geräten rutschen diese dann untereinander, um die Lesbarkeit des Textes und die
+                Größe der Bilder angemessen zu halten. Ich habe mich für dieses Layout entschieden, da auf größeren Geräten der Content
+                gut zu erkennen ist und auf kleineren Geräten durch das untereinander rutschen die Lesbarkeit ebenfalls erhalten bleibt.
+                Insgesamt ist ein sehr simples Layout.
+            </p>
+            <br>
+            <p itemprop="description">
+                Bei der Hintergrundfarbe habe ich mit für Navy Blue entschieden, da es einen professionellen Look hat und gut aussieht.
+                Die Hintergrundfarbe der einzelnen Karten ist ein helles Grau. Für Links und Icons, welche auf Unterseiten
+                beziehungsweiße Externe Seiten verlinken, habe ich Coral (#E74C3C) verwendet, sodass man die Farbe mit Links auf allen
+                Unterseiten assoziiert. Dies soll zur besseren User Experience beitragen.
+            </p>
+            <br>
+            <p itemprop="description">
+                Mein Erstellungsprozess der Webseite startet mit der Überlegung, welchen Content ich auf diese packen möchte und wie er
+                angeordnet sein soll. Deshalb habe ich zuerst grobe Texte zu den einzelnen Bereichen verfasst, um mir einen Überblick zu
+                verschaffen. Danach habe ich einen Wireframe gezeichnet, der die erste Basis für die Erstellung und das Design der
+                Webseite war. Danach habe ich versucht ein Mockup mit Figma zu erstellen, welches ich dann ausprogrammieren kann. Dies
+                hat nur semi-gut funktioniert auf Grund meiner eingeschränkten Fähigkeit gute Designs zu erstellen. Schlussendlich habe
+                ich von der schönen Ästhetik losgelassen und mich für ein einheitliches Aussehen entschieden und akzeptablen Look –
+                schlicht, minimal, funktional. Das Ausprogrammieren der Seite war dann recht simpel, da ich mich nur auf die Erstellung
+                von bereits designtem konzentrieren musste und nicht gleichzeitig designen und programmieren musste. Dies hat auf jeden
+                Fall sehr geholfen bei der Auseinandersetzung mit Bootstrap als mein Framework zur Erstellung der Webseite. Ich habe
+                mich für Bootstrap entschieden, da ich schon Erfahrung mit Bootstrap durch vorherige Belege und Spielereien hatte. Zudem
+                war es mit seinen eingebauten responsiven Features optimal für mein Vorhaben ausgestattet. Des Weiteren ist es ein
+                mächtiger Werkzeugkasten mit vielen Standardtemplates, welche man für das Erstellen der Webseite nutzen kann. Bei meiner
+                Webseite habe ich hauptsächlich Bootstrap Cards verwendet für die Bereitstellung von Informationen. Zudem habe ich auf
+                der Projektunterseite die einzelnen Projekte in ein Carousel eingebunden, sodass man sich durch die Projekte drücken
+                kann und die Bilder der nicht angezeigten Projekte asynchron (lazy-loading) laden kann. Auf der Startseite habe ich
+                meine Unterseiten als Reihe von Karten (Items) dargestellt, welche zunächst unscharf sind und beim hovern hervorgehoben
+                werden. Als erstes hatte ich die Items auf Brightness 0 gesetzt. Dies war jedoch nicht angenehm anzuschauen, da einen
+                dann 6 schwarze Items anschauen und man eventuell vermutet, dass etwas nicht richtig funktioniert hat.
+            </p>
+            <br>
+            <p itemprop="description">
+                Im Modul Multimediale Webprogrammierung habe ich meine Kenntnisse zu jeglichen mir bereits bekannten Web-relevanten
+                Inhalten stark vertiefen können. Außerdem habe ich neues gelernt. Dazu zählen verschiedene Web APIs wie z.B. Canvas API
+                oder XMLHttpRequest API mit asynchronen JavaScript oder Analysetools wie PageSpeed Insights. Durch die Belege habe ich
+                meine Grundlagen in plain HTML, CSS und JavaScript verbessern können, sodass mir der Bau der Webseite mit Bootstrap
+                recht einfach von der Hand ging, da nur auf bereits bekannte Grundbausteine aufgebaut wurde und ich nur den Syntax von
+                Bootstrap lernen musste. Durch die Adoption von Bootstrap in meinen Entwicklungsprozess konnte ich meine Webseite in
+                recht kurzer Zeit lauffähig bringen und gleichzeitig responsiv für alle Geräte gestalten. Zudem sieht sie durch
+                Bootstrap einheitlich aus, da alles auf demselben Stylesheet basiert. Zusammenfassend habe ich im Modul Multimediale
+                Webprogrammierung gelernt wie ich Webseiten richtig programmiere und auf was man zu achten hat. Auch die Inhalte zu
+                Optimierungstools waren hilfreich für zukünftige Projekte. Des Weiteren habe ich festgestellt, dass mir das designen von
+                Webseiten definitiv nicht liegt auf Grund mangelnder Kreativität.
+            </p>
+            <br>
         </article>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
